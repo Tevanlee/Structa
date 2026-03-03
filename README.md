@@ -1,4 +1,4 @@
-# Structa - App (Next.js)
+# Structa - App
 
 A modular FastAPI backend for processing uploaded files (currently CSV support) using clean architecture principles, centralized error handling, and standardized API responses.
 
