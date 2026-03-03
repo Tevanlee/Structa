@@ -9,10 +9,9 @@ router = APIRouter()
 @router.post("/")
 async def upload_file(file: UploadFile):
 
-    contents = await file.read()
-
     service = get_service_for_file(file)
 
+    contents = await file.read()
     result = service(contents)
 
     return success_response(
